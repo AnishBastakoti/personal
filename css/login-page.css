@@ -11,7 +11,13 @@ body {
   background-color: white;
   border-radius: 7px;
   box-shadow: 0px 0px 5px 2px black;
-  margin: 5em auto;
+  margin: 9em auto;
+}
+@media only screen and (max-width:600px){
+  #main-holder{
+    width:79vw;
+    margin: 5em auto;
+  }
 }
 
 #login-error-msg-holder {
