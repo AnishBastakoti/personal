@@ -4,9 +4,31 @@
   <meta charset="utf-8">
   <title>Home App</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/main-page.css">
   <link rel='icon' href="pictures/icon.png" type="image/x-icon">
 </head>
 <body>
-<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <h1>Kiran's Home</h1>
+  <nav id="scrollmenu">
+    <ul>
+      <li class="btn active">Home</li>
+      <li class="btn">Main</li>
+    </ul>
+  </nav>
+  <div class="box">
+    <p>something</p>
+  </div>
+
+<script>
+var header = document.getElementById("scrollmenu");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
+}
+</script>
 </body>
 </html>
