@@ -16,11 +16,6 @@
     </ul>
   </nav>
   <div id="container">
-    <h3>Today's Roster</h3>
-    <div id="nameDiv" class="name"> Name: <input id="name" type="text"></div>
-    <div class="name"> Work: <input id="work" type="text"></div>
-    <div class="name"> Date: <input id="date" type="text"></div>
-    <button id="entry">Post</button>
     <table id="display">
       <caption> Daily Roster</caption>
       <tr>
@@ -29,18 +24,8 @@
         <th>Date</th>
       </tr>
     </table>
-  </div>
+</div>
+<script src="JS/script.js"></script>
+<script src="JS/main.js"></script>
 </body>
-<script>
-var header = document.getElementById("scrollmenu");
-var btns = header.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-  var current = document.getElementsByClassName("active");
-  current[0].className = current[0].className.replace(" active", "");
-  this.className += " active";
-  });
-}
-</script>
-<script src="JS\main.js"></script>
 </html>

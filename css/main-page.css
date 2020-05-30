@@ -1,3 +1,57 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+html{
+  background-color: #b3ffff;
+  background: radial-gradient(rgba(179, 255, 255, 0.5), rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.3));
+  background-repeat: no-repeat;
+  text-align: center;
+  height: 100%;
+}
+#nameDiv{
+  margin-top: 50px;
+}
+caption, .name{
+  font-size: 25px;
+  color:#004d00;
+  font-weight: 700;
+  font-family: cursive;
+  margin: 20px;
+}
+#entry{
+  width:150px;
+  height: 40px;
+  font-size: 23px;
+  font-family:"comic sans MS", cursive, sans-serif;
+  background-color: #001866;
+  color:#fff;
+  box-shadow:0, 2px 2px 0 rgba(0, 0, 0, 0.5);
+  margin-top: 10px;
+  border-radius: 8px;
+}
+table{
+  border-collapse: collapse;
+  width:50%;
+  margin: 50px auto;
+  background-color: burlywood;
+}
+table, th, td{
+  border: 2px solid black;
+  padding: 5px;
+}
+th{
+  font-size: 30px;
+  font-weight: 700;
+  font-family: Arial;
+  color:#004d00;
+}
+td{
+  font-size: 25px;
+  color:#000;
+  font-weight: 400;
+  font-family: Georgia;
+}
 #scrollmenu {
     background-color: #000;
     overflow: auto;
@@ -22,9 +76,12 @@
   border-radius: 8px;
   text-decoration: underline;
 }
-h1{
+h1, h3{
   text-align: center;
   font-weight: bold;
   font-family: cursive;
   color: brown;
+}
+.box{
+  box-shadow: 0px 0px 5px 2px black;
 }
